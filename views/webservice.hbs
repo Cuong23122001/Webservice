@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <h1>Send a post request</h1>
+    <form action="/sendPayLoad" method="post">
+        <select name="jsonpayload">
+            <option value='{"userId":"wm123", 
+"detailList":[
+{"name":"Android Conference", "description" : "wm123-test 123"}, 
+{"name":"Client Meeting",   "description" : "wm123test 456"}]}
+'>userId wm123 - 2 details</option>
+       
+        <option value='{"userId":"wm246", 
+"detailList":[
+{"name":"Mobile learning",  "description" : "wm246-test 123"}]}'>userId wm246 - 1 detail</option>
+      
+        <option value=' 
+"detailList":[
+{"name":"Mobile learning",  "description" : "wm246-test 123"}]}'>Invalid payload</option>
+        </select>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
